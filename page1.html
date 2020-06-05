@@ -1,0 +1,136 @@
+      <!DOCTYPE HTML>
+	  <html>
+	  <head>
+	   <title> Cont. Contact Form </title>
+	  </head>
+	  <style>
+	  /* Customize the label (the container) */
+body{
+background:url(img/m.jpg) no-repeat center center;
+background-size:cover;
+height:100vh;
+}
+     .container {
+     display: block;
+     position: relative;
+     padding-left: 35px;
+     margin-bottom: 12px;
+     cursor: pointer;
+     font-size: 18px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+     /* Hide the browser's default checkbox */
+     .container input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+     height: 0;
+     width: 0;
+}
+
+     /* Create a custom checkbox */
+     .checkmark {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 25px;
+     width: 25px;
+     background-color: #eee;
+}
+
+     /* On mouse-over, add a grey background color */
+     .container:hover input ~ .checkmark {
+     background-color: #ccc;
+}
+
+     /* When the checkbox is checked, add a blue background */
+     .container input:checked ~ .checkmark {
+     background-color: #2196F3;
+}
+
+     /* Create the checkmark/indicator (hidden when not checked) */
+     .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+}
+
+     /* Show the checkmark when checked */
+     .container input:checked ~ .checkmark:after {
+      display: inline;
+}
+
+     /* Style the checkmark/indicator */
+     .container .checkmark:after {
+     left: 9px;
+     top: 5px;
+     width: 5px;
+     height: 10px;
+     border: solid green;
+     border-width: 0 3px 3px 0;
+     -webkit-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+    .btn{
+   display: inline-block;
+   background: white;
+   padding: 14px 0;
+   color:black;
+   text-transform: uppercase;
+   cursor: pointer;
+   margin-top: 8px;
+   width: 100%;
+}
+   </style>
+   <body>
+     <h4> Gender</h4>
+     <label class="container">Male
+     <input name="gender" type="radio">
+     <span class="checkmark"></span>
+     </label>
+
+     <label class="container">Female
+     <input name="gender" type="radio">
+     <span class="checkmark"></span>
+     </label>
+
+     <label class="container">Another 
+     <input name="gender" type="radio">
+     <span class="checkmark"></span>
+     </label>
+ 
+	 <label for="country">Country</label>
+     <select id="country" name="country">
+      <option value="egypt">Egypt</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      </select>
+	 <label for="age">Age</label>
+    <select id="age" name="age">
+      <option value="1990">1990</option>
+      <option value="1991">1991</option>
+      <option value="1992">1992</option>
+	  <option value="1993">1993</option>
+	  <option value="1994">1994</option>
+	  <option value="1995">1995</option>
+	  <option value="1996">1996</option>
+	  <option value="1997">1997</option>
+	  <option value="1998">1998</option>
+	  <option value="1999">1999</option>
+	  <option value="2000">2000</option>
+	  <option value="2001">2001</option>
+	  <option value="2002">2002</option>
+	  <option value="2003">2003</option>
+	  <option value="2004">2004</option>
+	  <option value="2005">2005</option>
+	  <option value="2006">2006</option>
+	  <option value="2007">2007</option>
+    </select>
+	 <a class="btn" href="page2.html"><u>Login</u></a>
+	</body>
+	</html>
